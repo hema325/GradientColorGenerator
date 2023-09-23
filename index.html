@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="gradient-generator">
+        <div id="palette" class="gradient-color"></div>
+        <div class="controls">
+            <div>
+                <label>Direction</label>
+                <div class="select-wrapper">
+                    <select id="direction-gradient">
+                        <option value="top">Top</option>
+                        <option value="right top">Right top</option>
+                        <option value="right">Right</option>
+                        <option value="right bottom">Right bottom</option>
+                        <option value="bottom">Bottom</option>
+                        <option value="left bottom">Left bottom</option>
+                        <option value="left">Left</option>
+                        <option value="left top">Left top</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <label>Colors</label>
+                <div>
+                    <input type="color" class="color-input" value="#977dfe">
+                    <input type="color" class="color-input" value="#6878FF">
+                </div>
+            </div>
+        </div>
+        <div class="result">
+            background: linear-gradient(to left top, #977DFE, #6878FF);
+        </div>
+        <div class="buttons">
+            <button id="randomBtn">Radnom Colors</button>
+            <button id="copyBtn">Copy Code</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

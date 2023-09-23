@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #8b6af7;
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    caret-color: transparent;
+}
+
+.gradient-generator {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 360px;
+}
+
+.gradient-generator .gradient-color {
+    min-width: 150px;
+    height: 170px;
+    background-image: linear-gradient(to left top, #977dfe, #6878ff);
+    border-radius: inherit;
+}
+
+.gradient-generator .controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gradient-generator .controls label {
+    display: block;
+    font-size: 17px;
+}
+
+.gradient-generator .controls .select-wrapper {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.gradient-generator .controls select {
+    outline: none;
+    border: none;
+}
+
+.gradient-generator .controls input {
+    width: 50px;
+    height: 37.28px;
+}
+
+.gradient-generator .controls input:not(:last-child) {
+    margin-right: 5px;
+}
+
+.gradient-generator .result {
+    border: 1px solid #ccc;
+    color: #333;
+    background-color: #f8f8f8;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 5px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.gradient-generator .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.gradient-generator .buttons button {
+    border: none;
+    padding: 15px 10px;
+    border-radius: 5px;
+    color: white;
+    width: calc((100% - 20px) / 2);
+    cursor: pointer;
+    transition: background-color 400ms;
+}
+
+.gradient-generator .buttons button:first-child {
+    background-color: #6C757D;
+}
+
+.gradient-generator .buttons button:last-child {
+    background-color: #8b6af7;
+}
+
+.gradient-generator .buttons button:hover:first-child {
+    background-color: #5f666d;
+}
+
+.gradient-generator .buttons button:hover:last-child {
+    background-color: #704dff;
+}
